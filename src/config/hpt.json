@@ -1,0 +1,37 @@
+{
+  "num_trials": 15,
+  "hyperparameters": [
+    {
+      "name": "n_estimators",
+      "short_desc": "The number of trees in the forest.",
+      "type": "int",
+      "search_type": "uniform",
+      "range_low": 100,
+      "range_high": 500
+    },
+    {
+      "name": "learning_rate",
+      "short_desc": "Step size shrinkage used in update to prevents overfitting - alias eta",
+      "type": "real",
+      "range_low": 0.1,
+      "range_high": 0.5,
+      "search_type": "uniform"
+    },
+    {
+      "name": "gamma",
+      "short_desc": "Minimum loss reduction required to make a further partition on a leaf node of the tree.",
+      "type": "real",
+      "range_low": 0.0,
+      "range_high": 0.2,
+      "search_type": "uniform"
+    },
+    {
+      "name": "max_depth",
+      "short_desc": "Maximum depth of a tree. Higher value means more complex model",
+      "type": "int",
+      "range_low": 3,
+      "range_high": 8,
+      "search_type": "uniform"
+    }
+  ]
+}
