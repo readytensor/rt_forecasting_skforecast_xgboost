@@ -139,7 +139,7 @@ class Forecaster:
         data_schema: ForecastingSchema,
     ) -> None:
         """Fit the Forecaster to the training data.
-        A separate Adaboost model is fit to each series that is contained
+        A separate XGBoost model is fit to each series that is contained
         in the data.
 
         Args:
@@ -184,7 +184,7 @@ class Forecaster:
         id: int,
         future_covariates: List = None,
     ):
-        """Fit Adaboost model to given individual series of data"""
+        """Fit XGBoost model to given individual series of data"""
         model = XGBRegressor(
             n_estimators=self.n_estimators,
             learning_rate=self.learning_rate,
