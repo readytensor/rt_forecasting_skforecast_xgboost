@@ -31,7 +31,7 @@ class Forecaster:
         history_forecast_ratio: int = None,
         lags_forecast_ratio: int = None,
         n_estimators: int = 100,
-        max_depth: Optional[int] = 50,
+        max_depth: Optional[int] = 6,
         max_leaves: Optional[int] = 0,
         gamma: Optional[float] = 0.0,
         learning_rate: Optional[float] = 0.1,

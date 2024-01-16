@@ -1,12 +1,13 @@
 {
   "n_estimators": 100,
   "lags": null,
-  "lags_forecast_ratio": 5,
+  "history_forecast_ratio": 20,
+  "lags_forecast_ratio": 3,
   "learning_rate": 0.3,
   "gamma": 0.0,
   "max_depth": 5,
+  "min_child_weight": 2,
   "max_leaves": 0,
-  "history_forecast_ratio": 20,
   "use_exogenous": true,
   "random_state": 0, 
   "device": "cuda"
